@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primeira-cor:#574AE8;
+    --gradiente1: linear-gradient(to right, #574AE8, #3EA1DB);
+    --font-1: 'Lexend Deca', sans-serif;
+    --font-2: 'Inter', sans-serif;
+}
+
+/*----------------------------------------------INICIO HEADER-------------------------------------------------------------------*/
+
+.containerSiteFull{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 225px 3fr 40px / 1fr 1fr 1fr;
+
+    
+}
+
+.cabecalho{
+    background-image: var( --gradiente1);
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.cabecalhoInfo{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    max-width: 850px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.sub-title{
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--font-1);
+    
+}
+
+.inputInfo{
+    display: block;
+    margin:auto;
+    font-family: var(--font-1);
+    margin-top: 40px;
+    width: 850px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    padding-left: 50px;
+    background: url(../../img/lupa.png) no-repeat;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    font-size: 18px;
+    background-position: 20px 20px; 
+}
+
+.inputInfo::placeholder{
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .inputInfo{
+        width: 85%;
+    }
+    .cabecalhoInfo{
+        width: 85%;
+    }
+}
+
+/*------------------------------------------------FIM HEADER-----------------------------------------------------------*/
+
+/*-------------------------------------------------INICIO MAIN----------------------------------------------------------------------*/
+
+.containerConteudo{
+    background-color: var(--font-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 80px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;  
+}
+
+.conteudo01, .conteudo02, .conteudo03 , .conteudo04{
+    height: auto;
+    max-width: 850px;
+    font-family: var(--font-2);
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #1A202C;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 00px 0px 5px 0px rgba(0, 0, 0, 0.30);
+}
+
+.informacoes{
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.imgLove{
+    cursor: pointer;
+}
+
+.subtitle{
+    color: #1A202C;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+p{
+    color: #717171;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .conteudo01 {
+        width: 85%;
+    }
+
+    .conteudo02 {
+        width: 85%;
+    }
+
+    .conteudo03 {
+        width: 85%;
+    }
+
+    .conteudo04 {
+        width: 85%;
+    }
+    
+}
